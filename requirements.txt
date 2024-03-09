@@ -1,0 +1,4 @@
+chromadb
+langchain-google-genai
+langchain
+youtube-transcript-api
