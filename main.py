@@ -65,7 +65,7 @@ def generate_response(user_message, relevant_part):
     if response.status_code == 200:
         return response.json()["choices"][0]["message"]["content"].strip()
     else:
-        return f"Error {response.status_code}: {response.text}"
+        return f"Error {response.status_code}: {response.text}"   
 
 
 if __name__ == "__main__":
