@@ -76,7 +76,6 @@ if __name__ == "__main__":
     while True:
         user_message = input("You: ")
         if user_message.lower() == "exit":
-            # Delete the temporary file when the user types "exit"
             if file_name:
                 os.remove(file_name)
             break
