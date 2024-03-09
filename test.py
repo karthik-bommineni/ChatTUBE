@@ -78,10 +78,11 @@ if __name__ == "__main__":
     print(f"YouTube Transcript:\n{full_transcript}")
 
     while True:
-        user_message = input("You: ")
+        user_message = input("You: ")  
         if user_message.lower() == "exit":
             break
         relevant_part = embed_and_query_chroma(user_message)
         print(f"Relevant part:\n{relevant_part}\n")
         response = generate_response(user_message, relevant_part)
         print(f"AI: {response}\n")
+        
